@@ -28,7 +28,7 @@ class GameView(arcade.View):
         self.physics_engine = arcade.PymunkPhysicsEngine #Pysics engine
         self.mouse = [0,0]              #Mouse coord
         self.stars = []                 #Star list
-        self.wave_number = 9          #Current wave of enemies (n + 1)
+        self.wave_number = 1          #Current wave of enemies (n + 1)
         self.enemy_hp_progression = [3,3,4,4,5,6,6,7,8,9] #Progression of the enemy HP count according to index(n_wave)
         self.endless = False            #If n_wave > 9 ==> endless = true
         self.shield_times = [5,5,5,5,10,10,10,15,15,25]   #Shield use times and same cooldown times according to index(n_wave)
